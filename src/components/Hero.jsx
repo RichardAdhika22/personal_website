@@ -25,6 +25,24 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
+
+      <div className='absolute bottom-7 w-full flex justify-center items-center'>
+        <a href='#about'>
+          <div className='w-[15px] h-[45px] rounded-3xl border-4 border-gray-500 p-2 flex-col justify-center items-center'>
+            <motion.div
+              animate={{
+                y: [0, 15, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className='relative w-3 h-3 rounded-full bg-gray-500 bottom-[7px] right-[7px]'
+            />
+          </div>
+        </a>
+      </div>
     </section>
   )
 }
