@@ -10,9 +10,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex items-center p-3 fixed top-0 z-20 bg-green-500">
-      <div className="w-full flex justify-between
-        items-center max-w-7xl mx-auto">
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-green-500`}>
+      <div className="w-full flex 
+        justify-between max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2"
         onClick={() => {
           setActive("");
@@ -20,8 +20,9 @@ const Navbar = () => {
         }}>
           <img src={logoCute} alt="logoCute" 
           className="w-9 h-9"/>
-          <p className="text-white text-[18px] font-bold cursor-pointer">Richard Adhika 
-            <span className="block sm:inline-block"> | UBC</span>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            Richard Adhika &nbsp;
+            <span className="block sm:inline-block">| UBC</span>
           </p>
           
         </Link>
@@ -52,8 +53,11 @@ const Navbar = () => {
                   active === link.title
                     ? "text-white"
                     : "text-gray-500"
-                } hover:text-white text-[18px] font-medium cursor-wait`}
-                onClick={() => setActive(link.title)}>
+                } font-poppins font-medium cursor-pointer text-[16px]`}
+                onClick={() => {
+                  setToggle(!toggle);
+                   setActive(link.title);
+                }}>
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
