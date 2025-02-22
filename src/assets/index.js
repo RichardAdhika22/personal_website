@@ -30,6 +30,8 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import myself from "./myself.jpg";
+
 export {
   backend,
   creator,
@@ -59,4 +61,5 @@ export {
   jobit,
   tripguide,
   logoCute,
+  myself
 };

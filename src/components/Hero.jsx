@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { BookCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -25,11 +25,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <BookCanvas />
 
-      <div className='absolute bottom-7 w-full flex justify-center items-center'>
+      {/* Scroll down animation */}
+      <div className='absolute bottom-7 w-full flex flex-col justify-center items-center'>
+        <div className="text-gray-400 text-[16px]" >Scroll down to explore!</div>
         <a href='#about'>
-          <div className='w-[15px] h-[45px] rounded-3xl border-4 border-gray-500 p-2 flex-col justify-center items-center'>
+          <div className='w-[15px] h-[45px] rounded-3xl border-4 border-gray-400 p-2 flex-col justify-center items-center'>
             <motion.div
               animate={{
                 y: [0, 15, 0],
@@ -39,7 +41,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className='relative w-2 h-2 rounded-full bg-gray-500 bottom-[6px] right-[5px]'
+              className='relative w-2 h-2 rounded-full bg-gray-400 bottom-[6px] right-[5px]'
             />
           </div>
         </a>

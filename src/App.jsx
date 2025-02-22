@@ -15,7 +15,7 @@ const App = () => {
         <Tech />
         <Projects />
         <Feedbacks />
-        <StarsCanvas />
+        {/* <StarsCanvas /> */}
       </div>
     </BrowserRouter>
   );
