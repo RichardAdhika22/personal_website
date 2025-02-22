@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
+  /* margin: 0; */
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -29,12 +29,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.light-blue-gradient {
+  background: #2aa6ad;
+  background: linear-gradient(-90deg, #2aa6ad 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #2aa6ad 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
@@ -122,6 +122,26 @@
   transform: translateZ(0);
 }
 
+.font-arapey-bold {
+  font-family: "Arapey", "Poppins", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.font-arapey {
+  font-family: "Arapey", "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-roboto {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {
@@ -197,4 +217,20 @@
       -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #cfe914  ;
+  }
+  50% {
+    color: #25aa69 ;
+  }
+  100% {
+    color: #2aa6ad;
+  }
+}
+
+.text-color-changing {
+  animation: colorChange 3s infinite; /* 5s to make it change over a period, infinite to loop */
 }
