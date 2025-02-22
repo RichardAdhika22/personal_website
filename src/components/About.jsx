@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import {useState} from 'react'
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { hobbies } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import {myself} from '../assets'
 
-const ServiceCard = ({ index, title, icon }) => {
+const HobbyCard = ({ index, title, icon, description }) => {
   const [isFlipped, setIsFlipped] = useState(false)
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -20,29 +20,31 @@ const ServiceCard = ({ index, title, icon }) => {
   }
 
   return (
-  <Tilt className='sm:w-[250px] cursor-pointer flip-card'>
+  <Tilt className='sm:w-[265px] cursor-pointer flip-card'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='green-pink-gradient p-[1px] rounded-[20px] shadow-card flip-card-inner h-[280px] w-[220px]' 
+      className='green-pink-gradient p-[2px] rounded-[20px] shadow-card flip-card-inner h-[280px]' 
       onClick={handleFlip}
       initial={false}
       animate={{rotateY: isFlipped ? 180 : 360}}
       transition={{duration: 0.3, animationDirection:"normal", ease: "easeInOut"}}
       onAnimationComplete={() => setIsAnimating(false)}
     >
+
+      {/* Front side */}
       <div
         options={{ // tilt settings 
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className={`bg-[#151030] rounded-[20px] py-5 px-12 
+        className={`bg-[#090a77] rounded-[20px] py-5 px-12 
           flex justify-evenly items-center flex-col flip-card-front h-full
           ${isFlipped ? "hidden" : ""}`}>
         <img
           src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
+          alt={title}
+          className='w-24 h-24 object-contain'
         />
 
         <h3 className='text-white text-[20px] font-bold text-center'>
@@ -50,10 +52,25 @@ const ServiceCard = ({ index, title, icon }) => {
         </h3>
       </div>
 
-      <div className={`bg-[#151030] rounded-[20px] py-5 px-5 h-full
-        flex  flip-card-back
+      {/* Back side */}
+      <div className={`bg-[#090a77] rounded-[20px] py-3 px-3 h-full
+        flex  flip-card-back text-[14px] relative z-4
         ${isFlipped ? "" : "hidden"}`}>
-        banana
+        {(title === "Travelling" || title === "Manga") ? 
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+            {description.map((item, index) => 
+              <li key={index}>
+                <div className="flex items-center">
+                  <span>{item.text} &nbsp;</span>
+                  <img src={item.image} alt="flags" 
+                  className={title === "Travelling" ? "w-[25px]" : "w-[30px]"} />
+                </div>
+              </li>)}
+          </ul> :
+          <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+            {description.map((item, index) => <li key={index}>{item}</li>)}
+          </ul> 
+        }
       </div>
     </motion.div>
   </Tilt>
@@ -83,6 +100,7 @@ const About = () => {
         <motion.img variants={fadeIn("", "", 0.1, 1)} src={myself} alt="myself" className="h-50 w-50 rounded-full"/>
       </div>
 
+      {/* Resume */}
       <motion.div className="flex  justify-center" variants={fadeIn("", "", 0.1, 1)}>
         <a href="https://drive.google.com/file/d/1doI1HmM8gR8svt38S7XUzbqPZjHA1_Os/view?usp=sharing"
           className="border-white border-3 p-2 hover:text-gray-300 hover:border-gray-300">
@@ -90,13 +108,16 @@ const About = () => {
         </a>
       </motion.div>
 
-      <motion.div variants={textVariant()} className="mt-10">
-        <p className={styles.sectionSubheadText}>A bit of my activities to unwind:</p>
+      {/* Hobbies section */}
+      <motion.div variants={textVariant()} className="mt-13">
+        <p className={styles.sectionSubheadText}>What I do in free time: &nbsp;
+          <span className="text-[10px]">(click for details)</span>
+        </p>
       </motion.div>
 
-      <div className='mt-5 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+      <div className='mt-5 flex flex-wrap gap-5'>
+        {hobbies.map((service, index) => (
+          <HobbyCard key={service.title} index={index} {...service}/>
         ))}
       </div>
     </div>

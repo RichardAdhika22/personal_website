@@ -1,8 +1,4 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
     javascript,
     typescript,
     html,
@@ -23,6 +19,29 @@ import {
     jobit,
     tripguide,
     threejs,
+    badminton,
+    airplane,
+    manga,
+    euler,
+    indonesia,
+    malaysia,
+    thailand,
+    singapore,
+    phillipines,
+    canada,
+    china,
+    taiwan,
+    peru,
+    mexico,
+    naruto,
+    one_piece,
+    demon_slayer,
+    black_clover,
+    bleach,
+    hxh,
+    aot,
+    tokyo_ghoul,
+    opm,
   } from "../assets";
   
   export const navLinks = [
@@ -40,22 +59,57 @@ import {
     },
   ];
   
-  const services = [
+  const hobbies = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "Badminton",
+      icon: badminton,
+      description: [
+        "Played competitively in Indonesia during high school, repsenting my school and club.", 
+        "Got first place on men's single category at my school.",
+        "Now I'm just playing for fun!",
+        "Favourite player: Lin Dan.",
+      ]
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Travelling",
+      icon: airplane,
+      description: [
+        { text: "Indonesia (home)", image: indonesia },
+        { text: "Malaysia", image: malaysia },
+        { text: "Singapore", image: singapore },
+        { text: "Thailand", image: thailand },
+        { text: "Phillipines", image: phillipines },
+        { text: "Canada (university)", image: canada },
+        { text: "China", image: china },
+        { text: "Peru", image: peru },
+        { text: "Taiwan", image: taiwan },
+        { text: "Mexico", image: mexico },
+      ],
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Manga",
+      icon: manga,
+      description: [
+        { text: "Naruto", image: naruto },
+        { text: "One Piece", image: one_piece },
+        { text: "Black Clover", image: black_clover },
+        { text: "Demon Slayer", image: demon_slayer },  
+        { text: "Bleach", image: bleach },
+        { text: "Hunter x Hunter", image: hxh },
+        { text: "Attack on Titan", image: aot },
+        { text: "Tokyo Ghoul", image: tokyo_ghoul },
+        { text: "One-punch Man", image: opm },
+      ],
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Project Euler",
+      icon: euler,
+      description: [
+        "A collection of challenging math problems that requires, guess what, programming!",
+        "Solved 52 questions so far.",
+        "Just recently started and it is addicting, will grind on it if I have free time.",
+        "Try it yourself! Link: https://projecteuler.net/",
+      ],
     },
   ];
   
@@ -262,4 +316,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { hobbies, technologies, experiences, testimonials, projects };

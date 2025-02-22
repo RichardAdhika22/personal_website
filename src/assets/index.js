@@ -1,11 +1,6 @@
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-import logoCute from "./logoCute.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -31,12 +26,34 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import myself from "./myself.jpg";
+import logoCute from "./logoCute.svg";
+import badminton from "./hobbies/badminton.png";
+import airplane from "./hobbies/airplane.png";
+import manga from "./hobbies/manga.png";
+import euler from "./hobbies/euler.png"
+
+import indonesia from "./flags/indonesia.png";
+import malaysia from "./flags/malaysia.png";
+import thailand from "./flags/thailand.png";
+import singapore from "./flags/singapore.png";
+import phillipines from "./flags/phillipines.png";
+import canada from "./flags/canada.png";
+import china from "./flags/china.png";
+import taiwan from "./flags/taiwan.png";
+import peru from "./flags/peru.png";
+import mexico from "./flags/mexico.png";
+
+import naruto from "./manga/naruto.png";
+import one_piece from "./manga/one_piece.png";
+import demon_slayer from "./manga/demon_slayer.png";
+import black_clover from "./manga/black_clover.png";
+import bleach from "./manga/bleach.png";
+import hxh from "./manga/hxh.png";
+import aot from "./manga/aot.png";
+import tokyo_ghoul from "./manga/tokyo_ghoul.png";
+import opm from "./manga/opm.png";
 
 export {
-  backend,
-  creator,
-  mobile,
-  web,
   github,
   menu,
   close,
@@ -61,5 +78,28 @@ export {
   jobit,
   tripguide,
   logoCute,
-  myself
+  myself,
+  badminton,
+  airplane,
+  manga,
+  euler,
+  indonesia,
+  malaysia,
+  thailand,
+  singapore,
+  phillipines,
+  canada,
+  china,
+  taiwan,
+  peru,
+  mexico,
+  naruto,
+  one_piece,
+  demon_slayer,
+  black_clover,
+  bleach,
+  hxh,
+  aot,
+  tokyo_ghoul,
+  opm,
 };

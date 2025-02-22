@@ -15,7 +15,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const newOpacity = Math.min(scrollPosition / 500, 1); 
-      console.log(scrollPosition);
       setScrollOpacity(newOpacity);
     };
 
