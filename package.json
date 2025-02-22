@@ -2,7 +2,7 @@
   "name": "personal_website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://richardadhika22.github.io/personal_website",
+  "homepage": "https://richardadhika22.github.io/personal_website",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
