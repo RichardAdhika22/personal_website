@@ -15,9 +15,9 @@ const App = () => {
           <StarsCanvas/>
         </div>
         <Experience />
-        <Tech />
+        {/* <Tech /> */}
         <Projects />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         
       </div>
     </BrowserRouter>

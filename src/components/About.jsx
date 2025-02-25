@@ -23,7 +23,7 @@ const HobbyCard = ({ index, title, icon, description }) => {
   <Tilt className='sm:w-[265px] cursor-pointer flip-card'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='green-pink-gradient p-[2px] rounded-[20px] shadow-card flip-card-inner h-[280px]' 
+      className='green-pink-gradient p-[2px] rounded-[20px] shadow-card flip-card-inner h-[280px] sm:w-[260px] w-[240px]' 
       onClick={handleFlip}
       initial={false}
       animate={{rotateY: isFlipped ? 180 : 360}}
@@ -53,7 +53,7 @@ const HobbyCard = ({ index, title, icon, description }) => {
       </div>
 
       {/* Back side */}
-      <div className={`bg-[#090a77] rounded-[20px] py-3 px-3 h-full
+      <div className={`bg-[#090a77] rounded-[20px] py-3 px-3 h-full 
         flex  flip-card-back text-[14px] relative z-4
         ${isFlipped ? "" : "hidden"}`}>
         {(title === "Travelling" || title === "Manga") ? 
@@ -63,7 +63,7 @@ const HobbyCard = ({ index, title, icon, description }) => {
                 <div className="flex items-center">
                   <span>{item.text} &nbsp;</span>
                   <img src={item.image} alt="flags" 
-                  className={title === "Travelling" ? "w-[25px]" : "w-[30px]"} />
+                  className={title === "Travelling" ? "w-[25px]" : "w-[25px]"} />
                 </div>
               </li>)}
           </ul> :
@@ -87,13 +87,13 @@ const About = () => {
           </motion.div>
 
           <motion.p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"  variants={fadeIn("", "", 0.1, 1)}>
-            I am currently a third-year undergraduate student at UBC Vancouver majoring in 
+            I am currently a third-year undergraduate student at University of British Columbia, Vancouver, majoring in 
             Combined Honours Mathematics and Computer Science.
             I am always fascinated with how math can be applied to computer algorithms 
             to produce cool stuffs. 
             Having experiences in both mathematics and computer science competitions, 
             as well as projects and professional jobs, 
-            I am looking forward to dive deeper into these subjects.
+            I am looking forward to dive deeper into these subjects!
           </motion.p>
         </div>
 

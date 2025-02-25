@@ -25,6 +25,9 @@ const Hero = () => {
         </div>
       </div>
 
+      <div className="absolute">
+       
+      </div>
       <BookCanvas />
 
       {/* Scroll down animation */}

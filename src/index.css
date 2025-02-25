@@ -10,8 +10,8 @@
 }
 
 .hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
+  margin-top: -50px;
+  /* padding-bottom: 100px; */
   display: block;
 }
 
@@ -36,6 +36,16 @@
     -90deg,
     #2aa6ad 0%,
     rgba(60, 51, 80, 0) 100%
+  );
+}
+
+.pink-white-gradient {
+  background: #fb77dc;
+  background: linear-gradient(-90deg, #fb77dc 0%, #f5ecf3 100%);
+  background: -webkit-linear-gradient(
+    -45deg,
+    #fb77dc 0%,
+    #f5ecf3 100%
   );
 }
 
@@ -157,6 +167,10 @@
 
 .flip-card-back{
   transform: rotateY(180deg);
+}
+
+.slick-dots li button {
+  background-color: #fda5e9 !important; /* Default dot color */
 }
 
 @keyframes mulShdSpin {

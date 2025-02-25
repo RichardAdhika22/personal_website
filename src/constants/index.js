@@ -11,10 +11,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
@@ -42,6 +38,8 @@ import {
     aot,
     tokyo_ghoul,
     opm,
+    ubc,
+    morie,
   } from "../assets";
   
   export const navLinks = [
@@ -170,55 +168,52 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Computer Science Teaching Assistant",
+      company_name: "UBC Dept. of Computer Science",
+      icon: ubc,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "May - Jun 2023, July 2024 - April 2025",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Taught CPSC 121: Physical and Mathematical Structure of Computation.",
+        "Assessed and troubleshoot logic circuit (both physical and software) and problems brought by students and staff.",
+        "Hosted office hours to help 30+ students have a better understanding of the course material.",
+        "Achieved 90% favourable rating on average from students’ end-of-term feedback."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Undergraduate Mathematics Researcher",
+      company_name: "UBC Dept. of Mathematics",
+      icon: ubc,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sept 2023 - April 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Taught MATH 100: Differential Calculus and MATH 101: Integral Calculus.",
+        "Facilitated small classes, for a total of 200 students by encouraging active math discussion among the groups, explaining various calculus concepts, and giving a proper mathematical guidance to students.",
+        "Graded written assignments."
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Mathematics Teaching Assistant",
+      company_name: "UBC Dept. of Mathematics",
+      icon: ubc,
+      iconBg: "#383E56",
+      date: "May 2024 - August 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked with 1 undergrad student and a supervisor (M. Pramanik) regarding Arithmetic Combinatorics",
+        "Adapted numerous proofs from research papers to expand on current theorems regarding the topic.",
+        "Proved that any k-syndetic set with upper logarithmic density equals one contains an affine copy of  eventually increasing polynomial progression.",
+        "Succesfully wrote an 8-page paper on the result, generalizing the case of geometric/arithmetic progression"
+      ],
+    },
+    {
+      title: "High School Tutor",
+      company_name: "Morie Education Centre",
+      icon: morie,
+      iconBg: "#383E56",
+      date: "Dec 2020 - July 2021",
+      points: [
+        "Tutored mathematics and physics to approximately 10 middle and high school students by using appropriate communication approaches and providing routine practices.",  
+        "Increased student average STEM grades to roughly 85%."
       ],
     },
   ];
@@ -251,6 +246,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Car Rent",
+      description:
+        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: carrent,
+      source_code_link: "https://github.com/",
+    },
     {
       name: "Car Rent",
       description:

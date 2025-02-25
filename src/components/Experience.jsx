@@ -1,17 +1,12 @@
-import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
-import { div } from "framer-motion/client";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -28,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
+            className='w-[70%] object-contain rounded-full'
           />
         </div>
       }
@@ -36,7 +31,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p
-          className='text-secondary text-[16px] font-semibold'
+          className='text-secondary text-[16px] font-semibold border-b border-white'
           style={{ margin: 0 }}
         >
           {experience.company_name}
@@ -60,16 +55,11 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <div>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} `}>
-          Work Experience.
-        </h2>
-      </motion.div>
+      <h2 className={`${styles.sectionHeadText} `}>
+        Work Experience
+      </h2>
 
-      <div className='mt-20 flex flex-col'>
+      <div className='mt-10 flex flex-col'>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
