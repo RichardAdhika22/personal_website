@@ -11,9 +11,6 @@ import {
     git,
     figma,
     docker,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
     badminton,
     airplane,
@@ -40,6 +37,10 @@ import {
     opm,
     ubc,
     morie,
+    water_quality,
+    insightUBC,
+    sport_agenda,
+    heart_attack,
   } from "../assets";
   
   export const navLinks = [
@@ -247,88 +248,96 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "UBC Course Finder",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to gain insights about courses at UBC, such as the average of a course, total number of students, most popular courses, professors with highest average grade, etc. The query result is presented in interactive histogram and pie chart.",
       tags: [
         {
-          name: "react",
+          name: "TypeScript",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Mocha",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "Chai",
           color: "pink-text-gradient",
         },
+        {
+          name: "Node.js",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: insightUBC,
+      source_code_link: "https://github.com/RichardAdhika22/InsightUBC",
     },
     {
-      name: "Car Rent",
+      name: "Water Quality Prediction",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A prediction model to predict water quality using satellite images and geographical data. Obtained second place in Pacific Conference on AI competition at UBC.",
       tags: [
         {
-          name: "react",
+          name: "Python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "Kaggle",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "SciKit-Learn",
           color: "pink-text-gradient",
         },
+        {
+          name: "Pandas",
+          color: "blue-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: water_quality,
+      source_code_link: "https://github.com/RichardAdhika22/water_quality_prediction",
     },
     {
-      name: "Job IT",
+      name: "Sport Agenda",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Sport Events Agenda is a platform for sport enthusiasts to record any kind of sport event they want to watch, so that they don't miss any important events. Users can add and edit sport event, and list events' priority based on their ratings.",
       tags: [
         {
-          name: "react",
+          name: "Java",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "JUnit",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "JavaSwing",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: sport_agenda,
+      source_code_link: "https://github.com/RichardAdhika22/sport_agenda/tree/main/project_u8b2e",
     },
     {
-      name: "Trip Guide",
+      name: "Heart Attack Prediction",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A prediction model to predict heart attack risk of a person given his age, cholestrol level, blood pressure, heart rate etc. using KNN-neighbour algorithm.",
       tags: [
         {
-          name: "nextjs",
+          name: "Jupyter",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "R",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tidyverse",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: heart_attack,
+      source_code_link: "https://github.com/RichardAdhika22/heart_attack_prediction_knn",
     },
   ];
   

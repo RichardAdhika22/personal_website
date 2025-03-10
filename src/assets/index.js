@@ -16,10 +16,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
 import myself from "./myself.jpg";
 import logoCute from "./logoCute.svg";
 import badminton from "./hobbies/badminton.png";
@@ -51,6 +47,11 @@ import opm from "./manga/opm.png";
 import ubc from "./ubc.jpg";
 import morie from "./morie.png";
 
+import water_quality from "./projects/water_quality.png";
+import insightUBC from "./projects/InsightUBC.png";
+import sport_agenda from "./projects/sport_agenda.png";
+import heart_attack from "./projects/heart_attack.png";
+
 export {
   github,
   menu,
@@ -68,9 +69,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   logoCute,
   myself,
   badminton,
@@ -98,4 +96,8 @@ export {
   opm,
   ubc,
   morie,
+  water_quality,
+  insightUBC,
+  sport_agenda,
+  heart_attack,
 };
