@@ -102,7 +102,7 @@ const About = () => {
 
       {/* Resume */}
       <motion.div className="flex  justify-center" variants={fadeIn("", "", 0.1, 1)}>
-        <a href="https://drive.google.com/file/d/1doI1HmM8gR8svt38S7XUzbqPZjHA1_Os/view?usp=sharing"
+        <a href="https://drive.google.com/file/d/1c9diuuexmPlgAxP8AxKyNyGEPdUJYae2/view?usp=sharing"
           className="border-white border-3 p-2 hover:text-gray-300 hover:border-gray-300">
           Check out my resume!
         </a>

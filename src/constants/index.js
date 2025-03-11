@@ -169,16 +169,14 @@ import {
   
   const experiences = [
     {
-      title: "Computer Science Teaching Assistant",
+      title: "CPSC 121 Teaching Assistant",
       company_name: "UBC Dept. of Computer Science",
       icon: ubc,
       iconBg: "#383E56",
       date: "May - Jun 2023, July 2024 - April 2025",
       points: [
-        "Taught CPSC 121: Physical and Mathematical Structure of Computation.",
-        "Assessed and troubleshoot logic circuit (both physical and software) and problems brought by students and staff.",
-        "Hosted office hours to help 30+ students have a better understanding of the course material.",
-        "Achieved 90% favourable rating on average from students’ end-of-term feedback."
+        "Facilitated labs for 150+ students about physical and digital circuit of low-level representation of computer logics and operations, obtaining 90% favourable rating on average from students’ end-of-term feedback.",
+        "Hosted weekly office hours to help students have a better understanding of the course material: mathematical proof, regex, DFA, NFA, propositional logic, and low-level computer instructions."
       ],
     },
     {
@@ -188,9 +186,9 @@ import {
       iconBg: "#383E56",
       date: "Sept 2023 - April 2024",
       points: [
-        "Taught MATH 100: Differential Calculus and MATH 101: Integral Calculus.",
-        "Facilitated small classes, for a total of 200 students by encouraging active math discussion among the groups, explaining various calculus concepts, and giving a proper mathematical guidance to students.",
-        "Graded written assignments."
+        "Worked with an undergrad student and a supervisor (M. Pramanik) regarding Arithmetic Combinatorics and conducted weekly meetings to exchange results/ideas, ensuring steady progress of the research paper.",
+        "Adapted Fraser’s result on the existence of almost arithmetic progression in large sets and Saito’s result on sets that avoid arithmetic progression to prove the case of increasing polynomial progression.",
+        "Wrote an 8-page paper, generalizing the previous result on arithmetic progression, approved by the supervisor."
       ],
     },
     {
@@ -200,10 +198,9 @@ import {
       iconBg: "#383E56",
       date: "May 2024 - August 2024",
       points: [
-        "Worked with 1 undergrad student and a supervisor (M. Pramanik) regarding Arithmetic Combinatorics",
-        "Adapted numerous proofs from research papers to expand on current theorems regarding the topic.",
-        "Proved that any k-syndetic set with upper logarithmic density equals one contains an affine copy of  eventually increasing polynomial progression.",
-        "Succesfully wrote an 8-page paper on the result, generalizing the case of geometric/arithmetic progression"
+        "TA for MATH 100 (Differential Calculus) and MATH 101 (Integral Calculus).",
+        "Facilitated small classes, for a total of 200 students by encouraging active math discussion among the groups, explaining various calculus concepts, and giving a proper mathematical guidance to students.",
+        "Graded written assignments to assess students' ability in solving calculus problems in a more detailed and rigorous setting, as well as in writing mathematics."
       ],
     },
     {
