@@ -9,7 +9,7 @@
 
 ---
 
-<p align="center"> This is my personal website, made using ReactJS, JavaScript, TailWind CSS, and ThreeJS. I deployed the website using GitHub service. 
+<p align="center"> Personal Website 
     <br> 
 </p>
 
@@ -19,7 +19,7 @@
 - [Deployment](#deployment)
 
 ## 🧐 About <a name = "about"></a>
-My personal website to showcase my project and experience using REACT in Typescript. Here is the link to [my website](https://richardadhika22.github.io/personal_website/)
+This is my personal website, made using ReactJS, JavaScript, TailWind CSS, and ThreeJS. I deployed the website using GitHub service.. Here is the link to [my website](https://richardadhika22.github.io/personal_website/)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
