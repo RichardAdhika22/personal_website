@@ -14,7 +14,7 @@
 - [Deployment](#deployment)
 
 ## 🧐 About <a name = "about"></a>
-This is my personal website, made using ReactJS, JavaScript, TailWind CSS, and ThreeJS. I deployed the website using GitHub service.. Here is the link to [my website](https://richardadhika22.github.io/personal_website/)
+This is my personal website, made using ReactJS, JavaScript, TailWind CSS, and ThreeJS. I deployed the website using GitHub service. Here is the link to [my website](https://richardadhika22.github.io/personal_website/) to get to know more about me!
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
