@@ -23,7 +23,21 @@ This is my personal website, made using ReactJS, JavaScript, TailWind CSS, and T
 You would need to have Node.js (v18 or higher) installed on your local machine.
 
 ### Installing
-First, run the development server:
+
+To install require packages:
+```bash
+npm install
+
+# for tailwindcss
+npm install -D tailwindcss
+npx tailwindcss init
+
+# other packages
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+
+```
+
+To run the program in your local host:
 
 ```bash
 npm run dev
